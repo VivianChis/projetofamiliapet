@@ -1,0 +1,82 @@
+
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+    
+    background-image: linear-gradient(-D3D3D3, #eff0f0 0%, #A9A9A9 100%);
+    
+    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1 {
+    color: rgb(93, 132, 93);
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+
+  .circulo{
+    background-color: rgb(221, 226, 224);
+    margin: 10px;
+  }
+
+  #containerRotas{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  #containerRotas:visited {
+     color: #21213c;
+  }
+    
+
+  #titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  a {
+    color:rgb(17, 19, 18);
+    
+  }
+
+  .corBranca{
+    color:gainsboro;
+    text-overflow: 2px 2px #e6e2e2;
+    font-family: 'Cinzel', serif;
+    font-family: 'Montserrat', sans-serif;
+   
+  }
+
+  #conteudoSite{
+
+    max-width: 1200px;
+    margin: auto;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    padding: 20px;
+    
+    }
+    
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  section article:hover {
+
+  color:#eff0f0
+
+  }
+    
