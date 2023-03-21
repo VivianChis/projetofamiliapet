@@ -1,82 +1,140 @@
-
-*{
+* {
   margin: 0%;
   padding: 0%;
 }
 
 body {
-    
-    background-image: linear-gradient(-D3D3D3, #eff0f0 0%, #A9A9A9 100%);
-    
-    font-family: 'Cinzel', serif;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  h1 {
-    color: rgb(93, 132, 93);
-    text-align: center;
-  }
-  
-  p {
-    font-family: verdana;
-    font-size: 20px;
-  }
 
-  .circulo{
-    background-color: rgb(221, 226, 224);
-    margin: 10px;
-  }
+  background-image: linear-gradient(-D3D3D3, #eff0f0 0%, #A9A9A9 100%);
 
-  #containerRotas{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  animation: gradient 10s ease alternate infinite;
+  background: linear-gradient(-45deg, #89ee52, #3ccbe7, #23a6d5, #23d5ab) no-repeat;
+  background-size: 150% 150%;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 30vh;
+  font-size: 200%;
+  -webkit-animation: gradient 10s ease alternate infinite;
+}
+
+
+@keyframes gradient {
+  from {
+    background-position: 0 50%;
   }
 
-  #containerRotas:visited {
-     color: #21213c;
-  }
-    
-
-  #titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
-
-  a {
-    color:rgb(17, 19, 18);
-    
-  }
-
-  .corBranca{
-    color:gainsboro;
-    text-overflow: 2px 2px #e6e2e2;
-    font-family: 'Cinzel', serif;
-    font-family: 'Montserrat', sans-serif;
-   
-  }
-
-  #conteudoSite{
-
-    max-width: 1200px;
-    margin: auto;
-    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
-    padding: 20px;
-    
-    }
-    
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } 
-
-  section article:hover {
-
-  color:#eff0f0
+  to {
+    background-position: 100% 50%;
 
   }
-    
+
+
+}
+
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+
+.circulo {
+  background-color: rgb(221, 226, 224);
+  margin: 10px;
+}
+
+#containerRotas {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#containerRotas:visited {
+  color: #131314;
+}
+
+
+#titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: rgb(17, 19, 18);
+
+}
+
+.corBranca {
+  color: gainsboro;
+  text-overflow: 2px 2px #e6e2e2;
+  font-family: 'Cinzel', serif;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+#conteudoSite {
+
+  max-width: 1200px;
+  margin: auto;
+  background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+  padding: 20px;
+
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section article:hover {
+
+  color: #eff0f0
+}
+
+#carrossel {
+  align-self: center;
+}
+
+#headerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+    grid-template-columns: 1fr;
+}
+
+.imagens {
+  width: 640px;
+  height: 360px;
+  background-color: black;
+  overflow: hidden;
+  display: block;
+}
+
+.imagens .imgensCarrosel {
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.imagens .imgensCarrosel img {
+  width: 19.9%;
+  object-fit: cover;
+  float: left;
+}
